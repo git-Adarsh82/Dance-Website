@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to My-Dance-Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/images/1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/images/2.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/images/3.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe 
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+          img(src="/static/images/logo1.png", alt="Sponsors Image",class="spImage")
+          img(src="/static/images/logo2.png", alt="Sponsors Image",class="spImage")
+          img(src="/static/images/logo3.png", alt="Sponsors Image",class="spImage")
+          img(src="/static/images/logo4.png", alt="Sponsors Image",class="spImage")
